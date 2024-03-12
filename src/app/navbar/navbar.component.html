@@ -1,0 +1,13 @@
+<header>
+    <nav class=" flex justify-between items-center py-10">
+        <h1 class=" font-extrabold text-xl italic">RecipeBook</h1>
+        <ul class=" flex gap-6">
+            @for (item of navLinks; track $index) {
+            <li class=" font-semibold hover:underline hover:text-gray-500 transition-all"> <a href={{item.href}}>
+                    {{item.title}}
+                </a></li>
+            }
+
+        </ul>
+    </nav>
+</header>

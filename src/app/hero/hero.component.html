@@ -1,0 +1,16 @@
+<section> 
+    <div class="text-center">
+        <h1 class=" text-6xl max-w-6xl font-extrabold mx-auto mb-5">Healthy Cooking Recipes <br /> and the right Nutrition.</h1>
+        <p class=" text-4xl max-w-[40rem] mx-auto font-normal my-6">Browse through over 650,000 Tasty Recipes</p>
+        <button class="rounded-bl-lg rounded-tr-lg bg-green-600 p-4 font-bold mb-5 text-white">
+            MORE RECIPES
+        </button>
+    </div>
+
+    <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-10">
+        @for (item of recipes; track $index) {
+        <app-recipe-card></app-recipe-card>
+        }
+    </div>
+
+</section>
